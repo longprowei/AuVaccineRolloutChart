@@ -18,8 +18,8 @@ const url = "https://vaccinedata.covid19nearme.com.au/data/all.json";
                 labels.push(element.DATE_AS_AT);
                 dayData.push(element.TOTALS_NATIONAL_LAST_24HR);
                 totalData.push(element.TOTALS_NATIONAL_TOTAL);
-                nswDayData.push(element.STATE_CLINICS_NSW_LAST_24HR ? element.STATE_CLINICS_NSW_LAST_24HR : 0 + element.CWTH_AGED_CARE_NSW_LAST_24HR ? element.CWTH_AGED_CARE_NSW_LAST_24HR : 0 + element.CWTH_PRIMARY_CARE_NSW_LAST_24HR ? element.CWTH_PRIMARY_CARE_NSW_LAST_24HR : 0);
-                nswTotalData.push(element.STATE_CLINICS_NSW_TOTAL ? element.STATE_CLINICS_NSW_TOTAL : 0  + element.CWTH_AGED_CARE_NSW_TOTAL ? element.CWTH_AGED_CARE_NSW_TOTAL : 0 + element.CWTH_PRIMARY_CARE_NSW_TOTAL ? element.CWTH_PRIMARY_CARE_NSW_TOTAL : 0);
+                nswDayData.push((element.STATE_CLINICS_NSW_LAST_24HR ? element.STATE_CLINICS_NSW_LAST_24HR : 0) + (element.CWTH_AGED_CARE_NSW_LAST_24HR ? element.CWTH_AGED_CARE_NSW_LAST_24HR : 0) + (element.CWTH_PRIMARY_CARE_NSW_LAST_24HR ? element.CWTH_PRIMARY_CARE_NSW_LAST_24HR : 0));
+                nswTotalData.push((element.STATE_CLINICS_NSW_TOTAL ? element.STATE_CLINICS_NSW_TOTAL : 0)  + (element.CWTH_AGED_CARE_NSW_TOTAL ? element.CWTH_AGED_CARE_NSW_TOTAL : 0) + (element.CWTH_PRIMARY_CARE_NSW_TOTAL ? element.CWTH_PRIMARY_CARE_NSW_TOTAL : 0));
             });
 
 
